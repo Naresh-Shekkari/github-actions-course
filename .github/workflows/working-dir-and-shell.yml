@@ -30,18 +30,8 @@ jobs:
         steps:
             - name: Display Working Dirctory and List Files
               run: |
-                pwd
-                ls -a 
-                echo "GITHUB_SHA: $GITHUB_SHA"
-                echo "GITHUB_REPOsITORY: $GITHUB_REPOSITORY"
-                echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
-                echo "GITHUB_REF: $GITHUB_REF"
-                echo "GITHUB_RUN_ID: $GITHUB_RUN_ID"
-                echo "GITHUB_RUN_NUMBER: $GITHUB_RUN_NUMBER"
-                echo "GITHUB_ACTOR: $GITHUB_ACTOR"
-                echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
-                echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
-                echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
-                echo "GITHUB_ACTION: $GITHUB_ACTION"
-                echo "GITHUB_API_URL: $GITHUB_API_URL"
-                echo "GITHUB_SERVER_URL: $GITHUB_SERVER_URL"                
+                Get-Location
+                dir
+                echo "GITHUB_SHA: $env:GITHUB_SHA"
+                echo "GITHUB_REPOsITORY: $env:GITHUB_REPOSITORY"
+                echo "GITHUB_WORKSPACE: $env:GITHUB_WORKSPACE"
