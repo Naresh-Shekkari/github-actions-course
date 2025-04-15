@@ -17,6 +17,7 @@ jobs:
                 echo "This is my first GitHub Actions workflow."
                 echo "I am running multiple commands in a single step."
                 echo "This is the third command."
+                echo "Version details here."
                 node -v
                 npm -v
     parallel-job-macos:
