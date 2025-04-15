@@ -9,7 +9,7 @@ jobs:
             - name: List of Files Before
               run: ls -a
 
-            - name: Checkout Repository
+            - name: Checkout Test Repository
               uses: actions/checkout@v2
 
             - name: List of Files After
