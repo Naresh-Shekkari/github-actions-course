@@ -25,6 +25,10 @@ jobs:
                 echo "GITHUB_SERVER_URL: $GITHUB_SERVER_URL"
                 echo "GITHUB_GRAPHQL_URL: $GITHUB_GRAPHQL_URL"
                 echo "GITHUB_RUN_ATTEMPT: $GITHUB_RUN_ATTEMPT"
+            - name: Change working Directory
+              working-directory: /home/runner/work
+              run: pwd
+
     display-wd-info-windows:
         runs-on: windows-latest
         steps:
