@@ -17,3 +17,5 @@ jobs:
                 echo "This is my first GitHub Actions workflow."
                 echo "I am running multiple commands in a single step."
                 echo "This is the third command."
+                node -v
+                npm -v
