@@ -33,5 +33,3 @@ jobs:
               run: Write-Output "Hello, World!"
             - name: echo a string
               run: Write-Output "This is my first GitHub Actions workflow."
-            - name: Error step
-              run:  doesnotexits
