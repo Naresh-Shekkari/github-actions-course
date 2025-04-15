@@ -25,4 +25,23 @@ jobs:
                 echo "GITHUB_SERVER_URL: $GITHUB_SERVER_URL"
                 echo "GITHUB_GRAPHQL_URL: $GITHUB_GRAPHQL_URL"
                 echo "GITHUB_RUN_ATTEMPT: $GITHUB_RUN_ATTEMPT"
-                
+    display-wd-info-windows:
+        runs-on: windows-latest
+        steps:
+            - name: Display Working Dirctory and List Files
+              run: |
+                pwd
+                ls -a 
+                echo "GITHUB_SHA: $GITHUB_SHA"
+                echo "GITHUB_REPOsITORY: $GITHUB_REPOSITORY"
+                echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+                echo "GITHUB_REF: $GITHUB_REF"
+                echo "GITHUB_RUN_ID: $GITHUB_RUN_ID"
+                echo "GITHUB_RUN_NUMBER: $GITHUB_RUN_NUMBER"
+                echo "GITHUB_ACTOR: $GITHUB_ACTOR"
+                echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
+                echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
+                echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
+                echo "GITHUB_ACTION: $GITHUB_ACTION"
+                echo "GITHUB_API_URL: $GITHUB_API_URL"
+                echo "GITHUB_SERVER_URL: $GITHUB_SERVER_URL"                
