@@ -1,0 +1,19 @@
+name: My First workflow
+
+# As part this workflow I am trying to run singnle commands in shell and multiple commands in shell
+# The workflow will be triggered on push events to the repository
+
+on: [push]
+
+jobs:
+    run-shell-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run Single shell commands
+              run: echo "Hello, World!"
+
+            - name: Run multiple shell commands
+              run: |
+                echo "This is my first GitHub Actions workflow."
+                echo "I am running multiple commands in a single step."
+                echo "This is the third command."
